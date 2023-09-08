@@ -1,0 +1,80 @@
+.homeZoneListNew {
+  &__topText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: -57px;
+    z-index: -1;
+
+    @media (max-width: 1000px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__position {
+      margin-top: -90px;
+    }
+
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #bbc5ff;
+      margin: 0;
+    }
+
+    img {
+      margin-top: 13px;
+      transform: rotate(-4deg);
+    }
+
+    &--zone4 {
+      img {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 66px;
+  }
+
+  &__mintAll {
+    margin-top: 56px;
+    button {
+      max-width: 100%;
+    }
+
+    @media (max-width: 1000px) {
+      margin: 56px auto 0;
+      width: fit-content;
+    }
+
+    div {
+      max-width: 311px;
+      width: 311px;
+    }
+
+    &--text {
+      display: flex;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 8px 0 0;
+      @media (max-width: 1000px) {
+        text-align: center;
+      }
+    }
+  }
+}

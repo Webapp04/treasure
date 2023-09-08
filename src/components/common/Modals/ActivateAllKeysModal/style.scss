@@ -1,0 +1,75 @@
+.activateAllKeysModal__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  div {
+    max-width: 100%;
+  }
+}
+
+.activateAllKeysModal__list {
+  height: 246px;
+  overflow-y: scroll;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  &--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    background: var(--keyItemBg);
+    border-radius: 8px;
+    padding: 8px 12px 8px 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    height: 52px;
+
+    &:hover {
+      background: black;
+    }
+    
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
+
+      img {
+        border-radius: 4px;
+        width: 36px;
+        height: 36px;
+      }
+
+      span {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--marketplaceTitle);
+      }
+    }
+
+  }
+}
+
+.activateAllKeysModal__cross{
+  cursor: pointer;
+}
+
+.activateAllKeysModal__list::-webkit-scrollbar {
+  width: 3px;
+}
+
+.activateAllKeysModal__list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.activateAllKeysModal__list::-webkit-scrollbar-thumb {
+  background: var(--dashboardScrollBg);
+  opacity: 0.7;
+  border-radius: 3px;
+}

@@ -1,0 +1,38 @@
+.homePhoneCardsContainer {
+
+  @media (max-width: 1000px) {
+    width:"338px";
+    overflow-x: scroll;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    margin: 72px auto 0;
+    flex-wrap: wrap;
+    @media (max-width: 1000px){
+      display: block;
+      width: 1014px;
+      position: relative;
+    }
+
+    &__card {
+      background-image: var(--phoneCard);
+      width: 338px;
+      height: 418px;
+      display: inline-block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all .3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-image: var(--phoneCardHover);
+        transition: all .3s ease;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,140 @@
+.successMintModal {
+  &__title {
+    padding-top: 32px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    bottom: -70px;
+    left: 0;
+
+    &--oneToken {
+      bottom: -70px;
+    }
+  }
+
+  &__singleItem {
+    display: flex;
+    flex-direction: column;
+    width: 258px;
+    height: 298px;
+    background: rgba(251, 251, 251, 0.1);
+    box-shadow: 0px 4px 12px rgba(86, 86, 86, 0.16);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    video {
+      width: 248px;
+      height: 248px;
+      border-radius: 8px;
+    }
+
+    img {
+      width: 248px;
+      height: 248px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.successMintModal__slider {
+
+  &--item {
+    width: 232px;
+    height: 258px;
+    background: rgba(251, 251, 251, 0.1);
+    box-shadow: 0px 4px 12px rgba(86, 86, 86, 0.16);
+    border-radius: 8px;
+    margin: 20px 30px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    //transition: all .3s ease;
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      color: var(--landingTitle);
+      margin: 5px 0 0;
+    }
+
+    div {
+      width: 232px;
+      height: 258px;
+    }
+
+    video {
+      width: 224px;
+      height: 224px;
+      border-radius: 8px;
+      //transition: all .3s ease;
+    }
+
+    img {
+      width: 224px;
+      height: 224px;
+      border-radius: 8px;
+      //transition: all .3s ease;
+    }
+  }
+}
+
+.successMintModal__slider .slick-current {
+  width: 300px !important;
+  height: 300px;
+  margin-left: 70px;
+
+  div {
+    width: 266px;
+    height: 292px;
+  }
+
+  video {
+    width: 258px;
+    height: 258px;
+  }
+
+  img {
+    width: 258px;
+    height: 258px;
+  }
+}
+
+.prev {
+  video {
+    padding-left: 254px;
+    //transition: all .3s ease;
+  }
+
+  img {
+    //padding-left: 254px;
+    float: right;
+    //transition: all .3s ease;
+  }
+}
+
+.prev .successMintModal__slider--item {
+  width: 107% !important;
+  //transition: all .3s ease;
+}
+
+.slick-current .successMintModal__slider--item {
+  margin: 0 30px;
+}

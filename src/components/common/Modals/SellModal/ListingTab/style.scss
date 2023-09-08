@@ -1,0 +1,327 @@
+.listingTab {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+  gap: 10px;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nft {
+    width: 258px;
+    background: var(--modalImgBg);
+    box-shadow: var(--modalImgShadow);
+    border-radius: 16px;
+    height: 330px;
+    box-sizing: border-box;
+    padding: 5px;
+
+    @media (max-width: 750px) {
+      max-width: 258px;
+      width: 100%;
+    }
+
+    p {
+      padding-left: 5px;
+    }
+
+    &--image {
+      width: 248px;
+      height: 248px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+
+    &--desc {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: var(--collectionName);
+      margin: 6px 0 0;
+    }
+
+    &--tokenId {
+      color: var(--link-notAvtive);
+    }
+  }
+
+  &__data {
+    width: 60%;
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+      div {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__price {
+    width: 100%;
+    position: relative;
+
+    &--wrapper {
+      margin: 8px 0 140px;
+      position: relative;
+
+      @media (max-width: 750px) {
+        margin: 8px 0 30px;
+      }
+    }
+
+    &--error {
+      margin: 0;
+      color: darkred;
+      opacity: 0.6;
+      padding: 5px 0 0 10px;
+      position: absolute;
+    }
+  }
+
+  &__currency {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--currencyInputLabel);
+    }
+
+    &--createPage {
+      p {
+        color: var(--currencyInputLabel);
+      }
+    }
+  }
+
+  &__currencyList {
+    background: var(--durationListBg);
+    border: 1px solid #bbc5ff;
+    backdrop-filter: blur(28px);
+    border-radius: 0px 0px 16px 16px;
+    width: 98px;
+    height: 0;
+    overflow-y: scroll;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+
+    &--open {
+      height: 128px;
+      visibility: visible;
+      transition: all 0.2s ease;
+      bottom: -127px;
+      z-index: 1;
+    }
+
+    p {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--faqItemText);
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    &--createPage {
+      background: var(--durationListBg);
+
+      p {
+        color: var(--currencyInputLabel);
+      }
+    }
+  }
+
+  &__startDate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &--input {
+      width: 60%;
+      position: relative;
+
+      input {
+        caret-color: transparent;
+      }
+
+      img {
+        position: absolute;
+        top: 19px;
+        right: 17px;
+        cursor: pointer;
+      }
+    }
+
+    &--time {
+      width: 40%;
+      position: relative;
+    }
+
+    &--timeOfDay {
+      margin: 0;
+      position: absolute;
+      right: 65px;
+      top: 10px;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--landingTitle);
+
+      @media (max-width: 750px) {
+        right: 15px;
+      }
+
+      &__createPage {
+        color: var(--marketplaceTitle) !important;
+      }
+    }
+
+    &--arrow {
+      transition: all 0.3s ease;
+    }
+
+    &--open {
+      transition: all 0.3s ease;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__durationInput {
+    border-radius: 16px 16px 0 0;
+    background: var(--durationListBg);
+    backdrop-filter: blur(24px);
+    border-bottom: transparent;
+
+    &--createPage {
+      background: var(--currencyPopupBg) !important;
+    }
+  }
+
+  &__durationList {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    z-index: 2;
+    background: var(--durationListBg);
+    border: 1px solid #bbc5ff;
+    backdrop-filter: blur(6px);
+    border-radius: 0 0 16px 16px;
+    width: 100%;
+    height: 200px;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--landingTitle);
+      margin: 0;
+      padding: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+      }
+    }
+
+    &--createPage {
+      background: var(--currencyPopupBg) !important;
+      p {
+        color: var(--accountAddress);
+      }
+    }
+
+    &--active {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+    }
+
+    &--duration {
+      padding: 0 !important;
+    }
+  }
+}
+
+.listingTab__input--active {
+  border-radius: 16px 16px 0px 16px;
+}
+
+.listingTab__currencyList--active {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.listingTab__arrow {
+  transition: all 0.3s ease;
+
+  &--open {
+    transition: all 0.3s ease;
+    transform: rotate(180deg);
+  }
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

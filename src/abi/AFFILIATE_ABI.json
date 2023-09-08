@@ -1,0 +1,302 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "affiliation_code",
+        "type": "string"
+      }
+    ],
+    "name": "activateAffiliate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "code",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "discount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "payback",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isActive",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct Affiliate.AffiliateUser[]",
+        "name": "newAffiliations",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "addAffiliations",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "affilation_code",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newDiscount",
+        "type": "uint256"
+      }
+    ],
+    "name": "changeAffiliateDiscount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "affilation_code",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newPayback",
+        "type": "uint256"
+      }
+    ],
+    "name": "changeAffiliatePayback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "affiliation_code",
+        "type": "string"
+      }
+    ],
+    "name": "deactivateAffiliate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string[]",
+        "name": "affilation_codes",
+        "type": "string[]"
+      }
+    ],
+    "name": "deactivateAffiliates",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "_to",
+        "type": "address"
+      }
+    ],
+    "name": "destroySmartContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "affilation_code",
+        "type": "string"
+      }
+    ],
+    "name": "getAffilationWalletByCode",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "affiliate_wallet",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "affilation_code",
+        "type": "string"
+      }
+    ],
+    "name": "getAffiliateDiscount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "discount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "affilation_code",
+        "type": "string"
+      }
+    ],
+    "name": "getAffiliatePayback",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "payback",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "affilation_code",
+        "type": "string"
+      }
+    ],
+    "name": "isActiveAffiliate",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

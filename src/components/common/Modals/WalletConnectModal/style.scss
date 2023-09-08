@@ -1,0 +1,42 @@
+.walletConnect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    width: 100%;
+    gap: 16px;
+
+    &__title{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: var(--modalTitle);
+        margin: 0;
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        background: var(--connectButtonBg);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        border: none;
+        cursor: pointer;
+
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+        color: var(--marketplaceTitle);
+    }
+}

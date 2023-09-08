@@ -1,0 +1,30 @@
+.statusBadge {
+    font-family: 'DM Sans';
+    width: 114px;
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &.active {
+        color: var(--primary-blue);
+        background: var(--badge-blue);
+    }
+
+    &.executed {
+        color: #2C9B8E;
+        background: var(--badge-green);
+    }
+
+    &.defeated {
+        color: #FF6871;
+        background: var(--badge-red);
+    }
+
+    &.canceled {
+        color: #909090;
+        background: var(--badge-gray);
+    }
+}

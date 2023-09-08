@@ -1,0 +1,132 @@
+.placeBidModal {
+
+  .button.light {
+    color: #BBC5FF;
+    border-color: #BBC5FF;
+    margin-right: 16px;
+  }
+
+  &__subtitle {
+    max-width: 384px;
+    margin: 24px auto 0;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);;
+  }
+
+  &__info {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+
+    &--item {
+      padding: 20px 0;
+      font-family: 'Poppins';
+      border-bottom: 1px solid #BBC5FF;
+      display: flex;
+
+      &__label {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 400;
+        min-width: 30%;
+        display: block;
+      }
+
+      &__value {
+        color: #BBC5FF;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__buttons {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__bid {
+    display: flex;
+    margin-top: 5px;
+
+    &--token {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      background: rgba(251, 251, 251, 0.1);
+      box-shadow: 0px 4px 12px rgba(86, 86, 86, 0.16);
+      border-radius: 16px;
+
+      &__name {
+        margin-top: 18px;
+        color: rgba(255, 255, 255, 0.9);
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+        padding-left: 10px;
+      }
+
+      &__description {
+        margin-top: 6px;
+        font-family: 'Poppins';
+        color: #93A3F8;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 0 0 10px 10px;
+      }
+
+      video {
+        width: 248px;
+        height: 248px;
+        border-radius: 8px;
+      }
+
+      img{
+        width: 248px;
+        height: 248px;
+        border-radius: 8px;
+      }
+    }
+
+    &--form {
+      margin-left: 32px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      &__minBid {
+        margin-top: 8px;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: var(--link-notAvtive);
+      }
+
+      &__header {
+        color: rgba(255, 255, 255, 0.85);
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 8px;
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      &__buttons {
+        margin-top: 205px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+    }
+  }
+}

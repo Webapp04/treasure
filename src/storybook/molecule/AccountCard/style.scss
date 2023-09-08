@@ -1,0 +1,145 @@
+.profileBarAccountOpen_mobile {
+  position: inherit !important;
+  width: 100% !important;
+  top: 0 !important;
+  border: none !important;
+  padding: 50px !important;
+  &__filters {
+    &__title {
+      font-style: bold;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+    visibility: hidden;
+  }
+}
+
+.profileBarAccountOpen {
+  width: 265px;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  z-index: 11;
+  backdrop-filter: blur(30px);
+  background: #080f20c4;
+  border: 1px solid #bbc5ff;
+  z-index: 10 !important;
+  border-radius: 24px;
+  padding: 24px 16px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  &__visible {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
+.profileBarAccountOpen__account {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profileBarAccountOpen__wallet {
+  background: rgba(187, 197, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profileBarAccountOpen__avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.profileBarAccountOpen__network {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+.profileBarAccountOpen__address--container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.profileBarAccountOpen__profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  cursor: pointer;
+}
+.profileBarAccountOpen__disconnect {
+  margin: 30px 0 0 0;
+}
+.profileBarAccountOpen__profileIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.profileBarAccountOpen__arrow {
+  position: absolute;
+  top: -13px;
+  right: 15%;
+  height: 30px;
+}
+.profileBarAccountOpen__address {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.85);
+
+  &--copied {
+    color: #2c9b8e;
+    white-space: nowrap;
+  }
+
+  &--img {
+    width: 16px;
+    height: 16px;
+    background: url("../../../assets/images/icon-copy-white.svg") no-repeat
+      center;
+  }
+
+  &--imgCopied {
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background: url("../../../assets/images/check-green.svg") no-repeat center;
+  }
+}
+
+.profileBarAccountOpen__profile {
+  img,
+  svg {
+    width: 20px;
+  }
+}
+
+.profileBarAccountOpen__address--container:hover
+  .profileBarAccountOpen__address--img {
+  background: url("../../atom/Icon/svg/icon-copy-blue.svg");
+}
+
+.profileBarAccountOpen__address--container:hover
+  .profileBarAccountOpen__address {
+  color: #2d46d6;
+}

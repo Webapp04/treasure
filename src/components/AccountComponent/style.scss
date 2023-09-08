@@ -1,0 +1,337 @@
+.account {
+  &__container {
+    background: var(--accountBg);
+    backdrop-filter: var(--accountBlur);
+    max-width: 510px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 25px 80px;
+    gap: 16px;
+    margin-top: 10px;
+    margin-left: -80px;
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      gap: 12px;
+      background: none;
+      backdrop-filter: none;
+      position: absolute;
+      top: 158px;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 10;
+    }
+
+    &--editMode {
+      height: 180px;
+      border: 1px solid #C2CBFF;
+      border-radius: 16px;
+      min-width: 428px;
+      max-width: fit-content;
+      padding: 25px;
+      margin-left: 0;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        max-width: 960px;
+      }
+
+      @media (max-width: 450px) {
+        position: initial;
+        border: none;
+        height: initial;
+        padding: 10px 25px;
+        top: 0;
+        left: 0;
+        transform: initial;
+      }
+    }
+  }
+
+  &__info {
+    @media (max-width: 450px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    @media (max-width: 450px) {
+      justify-content: center;
+    }
+
+    &--delete {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+    }
+  }
+
+  &__plus {
+    box-shadow: var(--socialsBoxShadow);
+    background: var(--socialsBg);
+    border-radius: 24px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease;
+    box-sizing: border-box;
+    padding: 5px 6.5px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--isNFTPage {
+      box-shadow: var(--socialsBoxShadow);
+      background: var(--socialsBg);
+      backdrop-filter: blur(2px);
+    }
+
+    &--active {
+      width: 176px;
+      transition: all .3s ease;
+    }
+
+    input {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      width: 0;
+      transition: all .3s ease;
+      font-family: 'Poppins', sans-serif;
+      color: var(--landingTitle);
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &--active input {
+      width: 100%;
+      transition: all .3s ease;
+    }
+
+  }
+
+  &__save {
+    border-radius: 40px;
+    width: 200px;
+    height: 40px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FBFBFB;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #40BAFF 0%, #687FFF 35.73%, #A953FF 70.1%, #FB25FF 100%);
+
+    @media (max-width: 1024px) {
+      background: #566FFE;
+      border: 2px solid #566FFE;
+    }
+
+    @media (max-width: 450px) {
+      width: 140px;
+    }
+  }
+
+  &__cancel {
+    background: #1e206e;
+    border: 1px solid white;
+
+    @media (max-width: 1024px) {
+      background: transparent;
+      color: #566FFE;
+      border: 2px solid #566FFE;
+    }
+  }
+
+  &__tooltip {
+    bottom: -45px;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease;
+    width: 170px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 4px 0 4px 8px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(3, 7, 16, 0.6);
+  }
+
+  &__tooltip::after {
+    content: url("../../assets/images/marketplace/arrow.svg");
+    width: 12px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 47%;
+    right: auto;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+
+    &--check {
+      position: absolute;
+      right: 67px;
+      top: 12px;
+      width: 20px;
+      height: 20px;
+    }
+
+    input {
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: #1e206e;
+      margin: 0;
+      background: rgba(236, 241, 249, 0.4);
+      border: .5px solid #C2CBFF;
+      outline: .5px solid #C2CBFF;
+      border-radius: 10px;
+      padding: 5px;
+      max-width: 180px;
+    }
+
+    p {
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: var(--accountName);
+      margin: 0;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__address {
+    margin: 8px 0 15px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--accountAddress);
+  }
+}
+
+.account__plus:hover .account__tooltip {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  &__more {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0 18px;
+    background: rgba(236, 241, 249, 0.3);
+    border-radius: 8px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @media (max-width: 450px) {
+      top: -10px;
+    }
+  }
+
+  &__account {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    p {
+      margin: 12px 0;
+      font-family: 'Poppins';
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--accountAddress);
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__photo {
+    width: 112px;
+    height: 112px;
+    border: 1px solid #080F20;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+  &__upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(8, 15, 32, 0.6);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all .3s ease;
+  }
+}
+
+.avatar:hover .avatar__upload {
+  opacity: 1;
+  transition: all .3s ease;
+}

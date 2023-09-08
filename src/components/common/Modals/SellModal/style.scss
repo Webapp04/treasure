@@ -1,0 +1,33 @@
+.sellModal__tabs {
+  max-width: 437px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--sellModalTabs);
+  border-radius: 90px;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &--item {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--link-notAvtive);
+    border-radius: 100px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-align: center;
+
+    &.active {
+      background: rgba(86, 111, 254, 0.6);
+      border: 1px solid rgba(45, 70, 214, 0.2);
+      backdrop-filter: blur(5px);
+      color: #ECF1F9;
+    }
+  }
+}

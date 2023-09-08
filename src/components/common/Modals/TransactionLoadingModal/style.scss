@@ -1,0 +1,37 @@
+.transactionLoadingModal {
+  &__text {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 8px;
+  }
+
+  &__heartImg{
+    background-image: var(--modalHeart);
+    width: 27.5px;
+    height: 21.75px;
+    //animation: heart 3s infinite ease-out;
+    background-position: center;
+  }
+}
+
+@keyframes heart {
+  0% {
+    background-image: var(--modalHeart);
+  }
+  50%{
+    background-image: var(--modalHeartColored);
+  }
+  100% {
+    background-image: var(--modalHeart);
+  }
+}

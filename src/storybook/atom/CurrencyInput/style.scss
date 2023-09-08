@@ -1,0 +1,162 @@
+.listingTab__price {
+  width: 100%;
+  position: relative;
+
+  &--wrapper {
+    margin: 8px 0 140px;
+    position: relative;
+
+    @media (max-width: 750px) {
+      margin: 8px 0 30px;
+    }
+  }
+
+  &--error {
+    margin: 0;
+    color: darkred;
+    opacity: 0.6;
+    padding: 5px 0 0 10px;
+    position: absolute;
+  }
+}
+
+.listingTab__currency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  position: absolute;
+  top: 20px;
+  right: 17px;
+  cursor: pointer;
+
+  p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #bbc5ff;
+  }
+
+  &--createPage {
+    p {
+      color: #bbc5ff;
+    }
+  }
+}
+
+.listingTab__currencyList {
+  background: #181540;
+  border: 1px solid #bbc5ff;
+  backdrop-filter: blur(28px);
+  border-radius: 0px 0px 16px 16px;
+  width: 98px;
+  height: 0;
+  overflow-y: scroll;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  color: #bbc5ff;
+
+  &--open {
+    height: 128px;
+    visibility: visible;
+    transition: all 0.2s ease;
+    bottom: -127px;
+    z-index: 1;
+  }
+
+  p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--faqItemText);
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  &--createPage {
+    background: #181540;
+
+    p {
+      color: #bbc5ff;
+    }
+  }
+
+  &--active {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+  }
+}
+
+.listingTab__input--active {
+  border-radius: 16px 16px 0px 16px;
+}
+
+.listingTab__arrow {
+  transition: all 0.3s ease;
+
+  &--open {
+    transition: all 0.3s ease;
+    transform: rotate(180deg);
+  }
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.modal__input {
+  border: 1px solid #bbc5ff;
+  border-radius: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ecf1f9;
+  padding: 8px 16px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+
+  &--createPage {
+    color: rgba(255, 255, 255, 0.85);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.85) !important;
+    }
+  }
+}
+
+.modal__input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}

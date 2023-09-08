@@ -1,0 +1,26 @@
+.editModal__buttons {
+  position: absolute;
+  top: 103px;
+  right: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: var(--maxWidth);
+  gap: 20px;
+  z-index: 222222;
+
+  @media (max-width: 1024px) {
+    bottom: 40px;
+    top: auto;
+    right: auto;
+    transform: translate(-50%);
+    left: 50%;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  @media (max-width: 450px) {
+    gap: 2%;
+  }
+}

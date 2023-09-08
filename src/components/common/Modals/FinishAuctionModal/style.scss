@@ -1,0 +1,16 @@
+.cancelModal {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0 32px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+}
+
+.finishAuctionModal__buttons{
+  margin-top: 50px;
+}

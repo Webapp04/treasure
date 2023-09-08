@@ -1,0 +1,235 @@
+.modal {
+  &__overview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    &--wrapper {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      max-width: 700px;
+      width: 100%;
+      margin: 0 auto;
+      height: auto;
+      overflow: hidden;
+      border: 1px solid rgb(147, 163, 248);
+      background: linear-gradient(
+        #06103380 0%,
+        #0a1d6080 16.2%,
+        #07174f80 40.23%,
+        #08144380 68.13%,
+        #040b2680 100%
+      );
+      overflow: hidden;
+      border-radius: 8px;
+      outline: none;
+      padding: 40px;
+      backdrop-filter: blur(24px);
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+    }
+    &--wrapper--mobile {
+      position: absolute;
+      inset: auto 50% 0px;
+      border-top: 1px solid rgb(204, 204, 204);
+      border-right: none;
+      border-bottom: none;
+      border-left: none;
+      border-image: initial;
+      background: rgb(8, 19, 38);
+      overflow: hidden;
+      border-radius: 16px 16px 0px 0px;
+      outline: none;
+      padding: 20px 40px;
+      width: 100%;
+      max-width: 1024px;
+      max-height: 500px;
+      height: 100%;
+      transform: translate(-50%);
+      box-shadow: rgba(86, 111, 254, 0.15) 0px -4px 15px;
+    }
+  }
+  &__exit {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    &--noPadding {
+      top: 0;
+      right: 0;
+      z-index: 2222;
+    }
+
+    &--bg {
+      width: 12px;
+      height: 12px;
+    }
+
+    &--line {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      //transition: all 0.3s ease;
+    }
+  }
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--landingTitle);
+    margin: 0;
+
+    @media (max-width: 450px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &--medium {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &--small {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &--big {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.01em;
+      font-weight: 400;
+    }
+
+    &--success {
+      color: #15c5b0;
+      font-weight: 500;
+    }
+
+    &--blue {
+      color: var(--goBackText);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    &--createPage {
+      color: var(--marketplaceTitle);
+
+      &::after {
+        content: "*";
+        color: #ff6871;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  &__boldText {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--landingTitle);
+    margin: 0;
+  }
+
+  &__input {
+    border: 1px solid var(--modalInputBorder);
+    border-radius: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--landingTitle);
+    padding: 8px 16px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--modalInputBg);
+
+    &--createPage {
+      color: var(--marketplaceTitle);
+
+      &::placeholder {
+        color: var(--marketplaceTitle) !important;
+      }
+    }
+  }
+
+  &__input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--tabMenuBgActive);
+  }
+
+  &__title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: var(--modalTitle);
+    margin: 0;
+    padding: 5px 0;
+
+    @media (max-width: 450px) {
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+
+  &__actionButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    @media (max-width: 450px) {
+      flex-direction: row;
+    }
+
+    div {
+      max-width: 100%;
+    }
+  }
+}
+
+.blurredModal {
+  background: #030d3399;
+  backdrop-filter: blur(2.5px);
+  background-color: #000000bf !important;
+}
+
+.modal__exit:hover .modal__exit--line {
+  visibility: visible;
+  opacity: 1;
+  //transition: all 0.3s ease;
+}
+
+.BarAccordian {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 99999;
+  margin-bottom: 30px;
+  div {
+    width: 70px;
+    height: 4px;
+    background-color: #93a3f8;
+    border-radius: 24px;
+    opacity: 0.3;
+  }
+}

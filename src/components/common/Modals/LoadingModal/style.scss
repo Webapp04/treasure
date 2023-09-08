@@ -1,0 +1,16 @@
+.loadingModal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 27px;
+  margin-top: -10px;
+
+  &__title{
+    padding: 0;
+  }
+
+  div{
+    max-width: 100%;
+  }
+}

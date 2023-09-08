@@ -1,0 +1,16 @@
+.transferModal {
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__text {
+   padding-bottom: 20px;
+  }
+
+  &__input{
+    margin-bottom: 90px;
+  }
+}

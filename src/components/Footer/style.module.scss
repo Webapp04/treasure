@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  &_version {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    color: var(--title-color);
+  }
+}

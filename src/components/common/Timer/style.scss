@@ -1,0 +1,26 @@
+.timer {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 256px;
+
+    &__element {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50px;
+
+        &--count {
+            font-family: "DM Sans";
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--timer-count);
+        }
+
+        &--label {
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--neutral);
+        }
+    }
+}

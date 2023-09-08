@@ -1,0 +1,58 @@
+.dashboardKeyRewards {
+  &__isAnimated {
+    border-radius: 16px;
+    height: 220px;
+    max-height: 220px;
+  }
+
+  &__rewards {
+    max-width: 364px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0 0 16px 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #ecf1f9;
+  }
+
+  &__amount {
+    margin: 0 0 4px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #ecf1f9;
+  }
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__button {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      max-width: 288px;
+    }
+  }
+}

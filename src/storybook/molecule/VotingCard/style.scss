@@ -1,0 +1,19 @@
+.votingEscrow {
+  background: rgba(3, 7, 16, 0.3);
+  border-radius: 8px;
+  width: 100%;
+  padding: 24px 22px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 64px;
+  position: relative;
+  max-width: 784px;
+
+  @media (max-width: 450px) {
+    display: block;
+  }
+  @media (max-width: 850px) {
+    margin: 32px auto 0;
+  }
+}

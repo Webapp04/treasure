@@ -1,0 +1,26 @@
+.addFunds {
+  &__subtitle {
+    margin: 32px 0;
+    text-align: center;
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 32px;
+
+    div {
+      max-width: 100px;
+    }
+  }
+}

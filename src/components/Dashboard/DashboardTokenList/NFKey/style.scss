@@ -1,0 +1,150 @@
+.NFKey {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid transparent;
+  //transition: all 0.3s ease;
+  border-radius: 4px;
+  z-index: 50;
+
+  &.active {
+    background: var(--bg-color);
+    border-color: #2D46D6;
+    box-shadow: 0px 4px 20px rgba(86, 111, 254, 0.5);
+
+    .NFKey__info--progress {
+      background: #ECF1F9;
+    }
+  }
+
+  &:hover {
+    .NFKey__info--progress {
+      background: #ECF1F9;
+    }
+  }
+
+  &__image {
+    //background: linear-gradient(90deg, #4964FE 100%, #4964FE 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 68px;
+    height: 68px;
+    position: relative;
+
+    &:before{
+      content: '';
+      background: var(--bg-color);
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 8px;
+    }
+
+    img,
+    video {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+      z-index: 2;
+    }
+  }
+
+  &__info {
+    padding-left: 9px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    &--inactive {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: var(--gameKeyTitle);
+      margin-top: 15px;
+      transition: all .3s ease;
+
+      &__active {
+        color: var(--landingTitle);
+        transition: all .3s ease;
+      }
+    }
+
+    &--title {
+      display: flex;
+      justify-content: space-between;
+
+      &__name {
+        color: var(--gameKeyTitle);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        transition: all .3s ease;
+
+        &--active {
+          color: var(--landingTitle);
+          transition: all .3s ease;
+        }
+      }
+
+      &__count {
+        color: var(--gameKeyTitle);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        transition: all .3s ease;
+
+        &--active {
+          color: var(--landingTitle);
+          transition: all .3s ease;
+        }
+      }
+    }
+
+    &--wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    &--progressLine {
+      position: relative;
+      width: 100%;
+      max-width: 135px;
+      height: 12px;
+      border-radius: 20px;
+      background: var(--progressLineBg);
+
+      &__bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 12px;
+        border-radius: 20px;
+        background: #C2CBFF;
+
+        &.yellow {
+          background: rgba(254, 201, 12, 0.6);
+          transition: all .3s ease;
+
+          &__active {
+            background: #FEC90C;
+            transition: all .3s ease;
+          }
+        }
+      }
+    }
+  }
+}

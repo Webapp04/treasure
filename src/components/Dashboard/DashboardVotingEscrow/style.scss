@@ -1,0 +1,184 @@
+.dashboardBonusCard {
+  background: var(--dashboardBlockBg);
+  border-radius: 8px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 44px;
+  box-sizing: border-box;
+  margin-top: 24px;
+  gap: 24px;
+  height: 593px;
+  position: relative;
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    height: fit-content;
+    max-width: 376px;
+    margin: 24px auto 0;
+    padding: 19px 20px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    &--button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div {
+        max-width: 288px;
+      }
+    }
+  }
+}
+
+.votingEscrow {
+  background: var(--dashboardBlockBg);
+  border-radius: 8px;
+  width: 100%;
+  padding: 24px 22px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 64px;
+  position: relative;
+  max-width: 784px;
+
+  @media (max-width: 450px) {
+    display: block;
+  }
+  @media (max-width: 850px) {
+    margin: 32px auto 0;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 18px;
+    width: 100%;
+
+    &--title {
+      color: var(--title-color);
+      font-weight: 700;
+      font-size: 20px;
+      font-family: 'DM Sans';
+    }
+
+    &--count {
+      margin-top: 16px;
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    &--subtitle {
+      margin: 6px 0 16px;
+      font-family: 'Poppins';
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--subtitleColor);
+    }
+
+    &--buttons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+
+      div {
+        max-width: 288px;
+      }
+    }
+
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+
+    &__label {
+      font-weight: 400;
+      color: var(--title-color);
+      font-size: 16px;
+    }
+
+    &__value {
+      font-weight: 500;
+      color: var(--title-color);
+      font-size: 16px;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-top: 10px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.votingInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 24px;
+  margin-bottom: 8px;
+
+  input {
+    flex: 1;
+    background: transparent;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: var(--title-color);
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.rewards {
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 390px;
+  width: 100%;
+  gap: 30px;
+  min-height: 420px;
+  margin-top: 24px;
+
+  @media (max-width: 1030px) {
+    max-width: 100%;
+  }
+
+  &__actions {
+    width: 100%;
+  }
+
+  &__info {
+    width: 100%;
+    margin-top: 42px;
+  }
+}

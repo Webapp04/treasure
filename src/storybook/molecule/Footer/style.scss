@@ -1,0 +1,110 @@
+.singleNFTFooter {
+  border-top: 1px solid #ffffff1a;
+}
+
+.singleNFTFooter__container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  padding: 120px 0 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #262b92b3;
+}
+
+.singleNFTFooter__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+}
+.singleNFTFooter__block1 {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+.Footer_joinText {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+.singleNFTFooter__socials {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.singleNFTFooter__links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 256px;
+  width: 100%;
+}
+.singleNFTFooter__links a.singleNFTFooter__link {
+  color: #ffffffd9;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.singleNFTFooter__walletcard {
+  max-width: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+.singleNFTFooter__copyright {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 10px 56px;
+  @media (max-width: 1024px) {
+    padding: 40px 20px 56px;
+  }
+}
+.singleNFTFooter__copyright p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff80;
+  margin: 0;
+}
+// {
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 20px;
+//     color: #ffffff80;
+//     margin: 0;
+//     padding: 40px 0 56px;
+// }
+// @media (max-width: 992px) {
+//   .singleNFTFooter__content {
+//     flex-wrap: wrap;
+//   }
+//   .singleNFTFooter__block1 {
+//     justify-content: center;
+//   }
+//   .singleNFTFooter__links {
+//     max-width: max-content;
+//   }
+// }
+
+@media (max-width: 991px) {
+  .singleNFTFooter__container {
+    padding: 50px 10px 30px;
+  }
+  .singleNFTFooter__content {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .singleNFTFooter__block1 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .singleNFTFooter__links {
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+  }
+}

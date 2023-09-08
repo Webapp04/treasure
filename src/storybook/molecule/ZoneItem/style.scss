@@ -1,0 +1,126 @@
+.zoneItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__nameWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    cursor: pointer;
+  }
+
+  &__priceWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+  }
+
+  &__heart {
+    width: 31.94px;
+    height: 26.62px;
+
+    @media (max-width: 1000px) {
+      width: 21.93px;
+      height: 18.13px;
+    }
+  }
+
+  &__name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ecf1f9;
+    //transition: all .3s ease;
+    opacity: 1;
+    margin: 0;
+
+    @media (max-width: 1000px) {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &--disabled {
+      opacity: 0.4;
+      //transition: all .3s ease;
+    }
+  }
+
+  &__key {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ecf1f9;
+    margin: 0;
+    //transition: all .3s ease;
+    opacity: 1;
+
+    @media (max-width: 1000px) {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    &--disabled {
+      opacity: 0.4;
+      //transition: all .3s ease;
+    }
+  }
+
+  &__price {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #07cd9d;
+    margin: 0;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    padding: 8px 0;
+    box-sizing: border-box;
+    background: rgba(3, 7, 16, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin-top: 16px;
+      justify-content: space-between;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+
+      div {
+        cursor: auto;
+      }
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    span {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ecf1f9;
+    }
+  }
+}

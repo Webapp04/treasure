@@ -1,0 +1,14 @@
+.upgradeKeyModal__text{
+  text-align: center;
+  margin: 15px 0 20px;
+  font-size: 16px;
+}
+
+.upgradeKeyModal__buttons{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  div{
+    max-width: 100%;
+  }
+}

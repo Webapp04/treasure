@@ -1,0 +1,32 @@
+.total__reward--tab__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 260px;
+  height: 26px;
+  background: rgba(44, 155, 142, 0.1);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #2c9b8e;
+
+  line-height: 12px;
+
+  @media (max-width: 830px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  @media (max-width: 450px) {
+    padding-top: 20px;
+  }
+
+  &--value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+}

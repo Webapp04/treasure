@@ -1,0 +1,41 @@
+.wallet__card--wrapper {
+  //   display: flex;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   gap: 10px;
+}
+.card__view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.card__view p {
+  font-size: 16px;
+  margin: 0;
+}
+.wallet-tab {
+  border: 1px solid #fff;
+  border-radius: 16px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #bbc5ff;
+}
+.wallet_tab--icon {
+  padding: 0 0.75rem;
+  border-left: 1px solid #fff;
+}
+.wallet_tab--copytext {
+  padding: 0 0.75rem;
+}
+.wallet_walletIcon {
+  position: relative;
+  top: 3px;
+}
+.copied {
+}
+
+.not__copied {
+}

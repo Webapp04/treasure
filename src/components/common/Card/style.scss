@@ -1,0 +1,80 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 40px);
+    max-width: 360px;
+    border-radius: 24px;
+    padding: 16px 20px;
+
+    .claim {
+        margin-top: 16px;
+        width: 100%;
+        color: #566FFE;
+        border: 2px solid #566FFE;
+        font-weight: 700;
+    }
+
+    .stake {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    &__title {
+        margin-top: 9px;
+        color: var(--title-color);
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    &__icon {
+        margin-top: 25px;
+    }
+
+    &__reward {
+        font-family: 'DM Sans';
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--title-color);
+        margin-top: 16px;
+    }
+
+    &__p1 {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--neutral2);
+        margin-top: 16px;
+    }
+
+    &__p2 {
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--neutral2);
+        margin-top: 8px;
+    }
+
+    &__p3 {
+        margin-top: 24px;
+        padding-top: 33px;
+        border-top: 1px solid var(--border-color);
+        color: var(--title-color);
+        font-size: 16px;
+        font-weight:500;
+        text-align: center;
+        width: 92%;
+    }
+
+    &__p4 {
+        width: 100%;
+        margin-top: 33px;
+        font-weight: 700;
+        color: var(--title-color);
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            color: var(--spanColor);
+        }
+    }
+}

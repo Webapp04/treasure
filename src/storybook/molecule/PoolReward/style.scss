@@ -1,0 +1,121 @@
+.votingEscrow__wrapper {
+  width: 100%;
+}
+
+.votingEscrow__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+  width: 100%;
+
+  &--title {
+    color: #ecf1f9;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "DM Sans";
+  }
+
+  &--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7px;
+    margin-top: 16px;
+  }
+
+  &--count {
+    color: #ecf1f9;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &--loader {
+    width: 27px;
+    margin-left: 8px;
+    margin-top: 6;
+  }
+
+  &--subtitle {
+    margin: 6px 0 16px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &--buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+
+    div {
+      max-width: 288px;
+    }
+  }
+}
+
+.votingEscrow__info {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  margin-top: 2.5rem;
+
+  &__label {
+    font-weight: 400;
+    color: #ecf1f9;
+    font-size: 16px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__loader {
+    width: 23px;
+    margin-left: 8px;
+  }
+
+  &__value {
+    font-weight: 500;
+    color: #ecf1f9;
+    font-size: 16px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-top: 10px;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.horizontal__bar {
+  background: #93a3f830;
+  height: 1px;
+  width: 100%;
+}
+
+.totalPoolReward__image {
+  position: absolute;
+  top: 17.5px;
+  right: 17.5px;
+  cursor: pointer;
+}

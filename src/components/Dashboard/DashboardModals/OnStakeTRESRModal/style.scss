@@ -1,0 +1,35 @@
+.onStakeTRESRModal {
+  &__title {
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  &__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--landingTitle);
+  }
+
+  &__input{
+
+    &--max{
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #2C9B8E;
+      cursor: pointer;
+    }
+  }
+
+  &__inputContainer{
+    margin-bottom: 20px;
+    position: relative;
+  }
+}

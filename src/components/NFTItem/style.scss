@@ -1,0 +1,315 @@
+.nft {
+  max-width: 314px;
+  //max-height: 414px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(251, 251, 251, 0.1);
+  border: 1px solid var(--nftItemBorder);
+  box-shadow: 0px 4px 12px rgba(86, 86, 86, 0.16);
+  backdrop-filter: blur(5px);
+  border-radius: 24px;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+
+  &__isSmallSize {
+    background: none;
+    border: none;
+    padding: 0;
+
+    video {
+      border-radius: 4px !important;
+    }
+
+    img {
+      border-radius: 4px !important;
+      object-fit: cover;
+    }
+
+    &:hover {
+      z-index: 2;
+    }
+  }
+
+  &__withDetails {
+    max-height: 624px;
+    z-index: 10;
+    background: var(--nftItemBg);
+    box-shadow: 0px 4px 12px rgba(86, 86, 86, 0.16);
+    backdrop-filter: blur(24px);
+  }
+
+  &__like {
+    background-image: url("../../../assets/images/heart_thin.svg");
+    width: 26.5px;
+    height: 21.75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s ease;
+
+    &--liked{
+      background-image: url("../../../assets/images/heart_home.svg") !important;
+      transition: all .3s ease;
+    }
+
+    &--number{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 5px;
+      padding: 5px 5px 5px 10px;
+      box-sizing: border-box;
+      background: rgba(236, 241, 249, 0.15);
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+      color: #ECF1F9;
+      width: 60px;
+      height: 35px;
+    }
+
+    &--wrapper {
+      position: absolute;
+      top: 15px;
+      height: 21.75px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s ease;
+      z-index: 33333;
+      right: 17px;
+      width: 57px;
+    }
+  }
+
+  &__blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    backdrop-filter: blur(4px);
+  }
+
+  &__image {
+    transition: all .2s ease;
+
+    &--border {
+      border-radius: 16px;
+      object-fit: cover;
+
+      img {
+        border-radius: 16px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      video {
+        border-radius: 16px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__image:hover {
+    transform: scale(1.1);
+    transition: all .2s ease;
+  }
+
+  &__raffle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    padding: 13px 25px 0 8px;
+    z-index: 2;
+
+    &--title {
+      background: rgba(86, 111, 254, 0.5);
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.9);
+      padding: 8px 12px;
+    }
+
+    &--img {
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__name {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--marketplaceTitle);
+    margin: 0;
+
+    &--logo {
+      display: flex;
+      align-items: center;
+      height: 7vh;
+      justify-content: space-between;
+      padding-right: 5px;
+    }
+  }
+
+  &__title {
+    margin: 16px 8px 12px;
+  }
+
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 8px;
+  }
+
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--marketplaceTitle);
+    margin: 0;
+  }
+
+  &__metadata {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 10px;
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      background: linear-gradient(112.75deg, rgba(118, 84, 255, 0.1) 0%, rgba(118, 84, 255, 0) 100%);
+      border: 1px solid #C2CBFF;
+      border-radius: 8px;
+      box-sizing: border-box;
+      padding: 4px 8px;
+      max-width: 144px;
+      width: 100%;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &--bg {
+      font-family: 'Poppins';
+      font-size: 14px;
+      line-height: 24px;
+      color: #566FFE;
+    }
+
+    &--color {
+      font-family: 'Poppins';
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--marketplaceTitle);
+    }
+
+    &--percentage {
+      font-family: 'Poppins';
+      font-size: 12px;
+      line-height: 20px;
+      color: var(--nftItemPercentage);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 65px;
+    width: 140px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FBFBFB;
+    padding: 12px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(52, 52, 52, 0.7);
+    border: 2px solid #ECF1F9;
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    height: 44px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    top: 150px;
+
+    &--large {
+      width: 200px;
+      bottom: 110px;
+      top: 266px;
+    }
+  }
+}
+
+.nft:hover .nft__button {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+
+.nft__image--placeholder {
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: var(--nftPlaceholder);
+  background-size: 1000px 640px;
+  position: relative;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
+
+.nft:hover .nft__like--wrapper {
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.nft__like--wrapper:hover .nft__like {
+  background-image: url("../../../assets/images/heart_bold.svg");
+}

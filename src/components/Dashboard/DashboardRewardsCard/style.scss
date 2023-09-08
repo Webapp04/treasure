@@ -1,0 +1,85 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 32px);
+    max-width: 360px;
+    border-radius: 24px;
+    padding: 16px;
+    height: 100%;
+
+    &.baseRewards {
+        justify-content: flex-start;
+        height: 440px;
+    }
+
+    .claim {
+        margin-top: 16px;
+        width: 100%;
+        color: #566FFE !important;
+        border: 2px solid #566FFE !important;
+        font-weight: 700;
+    }
+
+    .stake {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    &__title {
+        color: var(--title-color);
+        font-weight: 700;
+        font-size: 20px;
+        font-family: 'DM Sans';
+    }
+
+    &__icon {
+        margin-top: 25px;
+    }
+
+    &__reward {
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--title-color);
+        margin-top: 16px;
+        text-align: center;
+        line-height: 100%;
+    }
+
+    &__subtitle {
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--subtitleColor);
+        margin-top: 6px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 27px 0 0;
+        width: 100%;
+
+        li {
+            list-style-type: none;
+            font-weight: 400;
+            margin-top: 14px;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            color: var(--title-color);
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            span {
+                &:last-child {
+                    font-weight: 500;
+
+                }
+            }
+        }
+    }
+}

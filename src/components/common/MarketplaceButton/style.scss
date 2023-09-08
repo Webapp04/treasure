@@ -1,0 +1,71 @@
+.marketplaceButton {
+  border-radius: 40px;
+  max-width: 199px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--marketplaceButton);
+  cursor: pointer;
+  border: 2px solid var(--marketplaceButton);
+  box-sizing: border-box;
+  text-align: center;
+
+  &__gradient {
+    background: linear-gradient(90deg, #40BAFF 0%, #687FFF 35.73%, #A953FF 70.1%, #FB25FF 100%);
+    color: #FBFBFB;
+    border: none;
+  }
+
+  &__blue {
+    background: #4964FE;
+    border: none;
+    color: #FBFBFB;
+    &:hover {
+      background: #2D46D6;
+    }
+  }
+
+  &__isNormal {
+    &:hover {
+      background: #2D46D6;
+    }
+  }
+
+  &__white {
+    color: #BBC5FF;
+    border: 2px solid #BBC5FF;
+    &:hover {
+      background: #2D46D6;
+    }
+  }
+
+  &__withShadow {
+    box-shadow: var(--buttonShadow);
+  }
+
+  &__isAnimated {
+    transform: scale(1);
+    animation: buttonAnimated 1.5s ease infinite;
+  }
+}
+
+@keyframes buttonAnimated {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: var(--noteShadow);
+  }
+  100%{
+    transform: scale(1);
+    box-shadow: none;
+  }
+}

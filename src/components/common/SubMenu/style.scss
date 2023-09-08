@@ -1,0 +1,10 @@
+.subMenu{
+  display: none;
+  @media (max-width: 1260px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    padding-top: 30px;
+  }
+}

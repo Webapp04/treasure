@@ -1,0 +1,175 @@
+.totalPoolReward {
+  padding: 42px 38px;
+  width: 100%;
+  display: flex;
+  background: rgba(3, 7, 16, 0.3);
+  border-radius: 8px;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  height: 252px;
+  transition: height 0.3s ease;
+
+  @media (max-width: 850px) {
+    margin: 24px auto 0;
+  }
+
+  &__open {
+    height: fit-content;
+    transition: height 0.3s ease;
+  }
+
+  &__image {
+    position: absolute;
+    top: 17.5px;
+    right: 17.5px;
+    cursor: pointer;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ecf1f9;
+    width: 100%;
+
+    &--title {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    &--wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 7;
+      margin-top: 16px;
+    }
+
+    &--loader {
+      width: 27px;
+      margin-left: 8px;
+    }
+
+    &--count {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    &--arrow {
+      width: 10px;
+      height: 9px;
+      background: url("../../atom/Icon/svg/arrowWhite.svg") no-repeat center;
+      transform: rotate(0deg);
+      transition: all 0.3s ease;
+
+      &__open {
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+      }
+    }
+
+    &--subtitle {
+      margin-top: 6px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-direction: column;
+    width: 100%;
+    margin: 16px 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: height 0.3s ease;
+    max-height: 150px;
+    overflow: scroll;
+
+    &--open {
+      height: fit-content;
+      opacity: 1;
+      visibility: visible;
+      transition: height 0.3s ease;
+      max-height: 150px;
+      overflow-y: scroll;
+    }
+
+    &--block {
+      width: 98%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    &--text {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ecf1f9;
+      white-space: nowrap;
+    }
+
+    &--value {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ecf1f9;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    div {
+      max-width: 288px;
+    }
+  }
+}
+
+.totalPoolReward__details::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.totalPoolReward__details::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.totalPoolReward__details::-webkit-scrollbar-thumb {
+  background: rgba(251, 251, 251, 0.3);
+  opacity: 0.7;
+  border-radius: 3px;
+}
+
+.refresh__wrapper {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}

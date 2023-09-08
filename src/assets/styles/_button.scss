@@ -1,0 +1,35 @@
+.button {
+  font-family: "DM Sans", sans-serif;
+  background: var(--primary-blue);
+  padding: 12px 20px;
+  border-radius: 40px;
+  color: #ecf1f9;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: #ecf1f9;
+  }
+
+  &.light {
+    background: transparent;
+    color: var(--neutral2);
+    border: 2px solid var(--border-color);
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+[data-theme="dark"] .light {
+  color: var(--border-color);
+}
+
+.disabledEl {
+  opacity: 0.5;
+  pointer-events: none;
+}
