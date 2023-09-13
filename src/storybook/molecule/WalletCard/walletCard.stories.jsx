@@ -4,7 +4,11 @@ import { default as WalletCardStory } from "./walletCard";
 export default {
   title: "Molecules/WalletCard",
   component: WalletCardStory,
-  argTypes: {},
+  argTypes: {
+    isMobile: {
+      control: { type: "boolean" },
+    },
+  },
 };
 
 const Template = (args) => <WalletCardStory {...args} />;

@@ -7,20 +7,20 @@ import Button from "storybook/atom/Button/button";
 import Tooltip from "storybook/atom/Tooltip/tooltip";
 
 const BonusCard = ({
-  isDark = true,
-  isMobile = true,
-  totalRewards = 0,
-  onClaimBonus = () => {},
-  claimableBonusTotalReward = 0,
-  comulativeKeyLevel = 0,
-  veTresrSharePBalance = 0,
-  claimableBonusVeTresrReward = 0,
-  lpTotalStakedSMRTRAVAXBalance = 0,
-  claimableBonusJlpSmartrReward = 0,
-  lpTotalStakedTRESRAVAXBalance = 0,
-  claimableBonusJlpTresrReward = 0,
-  keyLevelPBalance = 0,
-  claimableBonusKeyLevelReward = 0,
+  isDark,
+  isMobile,
+  totalRewards,
+  onClaimBonus,
+  claimableBonusTotalReward,
+  comulativeKeyLevel,
+  veTresrSharePBalance,
+  claimableBonusVeTresrReward,
+  lpTotalStakedSMRTRAVAXBalance,
+  claimableBonusJlpSmartrReward,
+  lpTotalStakedTRESRAVAXBalance,
+  claimableBonusJlpTresrReward,
+  keyLevelPBalance,
+  claimableBonusKeyLevelReward,
 }) => {
   return (
     <>

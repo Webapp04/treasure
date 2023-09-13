@@ -11,4 +11,9 @@ const Template = (args) => <TimerStory {...args} />;
 
 export const Timer = Template.bind({});
 
-Timer.args = {};
+Timer.args = {
+  hours: 0,
+  minutes: 0,
+  seconds: 0,
+  days: 0,
+};

@@ -14,9 +14,9 @@ const ZoneItem = ({
   setAmount,
   onChecked,
   isDark,
-  withInput = false,
-  isDisabled = true,
-  isMobile = false,
+  withInput,
+  isDisabled,
+  isMobile,
 }) => {
   const onIncrease = () => {
     if (isDisabled) return;

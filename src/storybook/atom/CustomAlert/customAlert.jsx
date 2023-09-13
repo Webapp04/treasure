@@ -8,12 +8,12 @@ import {
 import Icon from "../Icon/icon";
 
 const CustomAlert = ({
-  alertIsActive = true,
-  alertStatus = "customAlert__success",
+  alertIsActive,
+  alertStatus,
   alertImage,
-  alertText = "Alert",
-  transactionHashBalance = 0,
-  onClose = () => {},
+  alertText,
+  transactionHashBalance,
+  onClose,
 }) => {
   const classNameStatus = {
     [ALERT_STATUS_SUCCESS]: "customAlert__success",

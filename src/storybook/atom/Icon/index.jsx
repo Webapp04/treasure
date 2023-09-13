@@ -31,6 +31,7 @@ import { ReactComponent as refreshIcon } from "./svg/refresh.svg";
 import { ReactComponent as crossIcon } from "./svg/cross.svg";
 import { ReactComponent as viewImgIcon } from "./svg/viewImg_light.svg";
 import { ReactComponent as arrowDownBlackIcon } from "./svg/arrowDownBlack.svg";
+import { ReactComponent as arrowDownWhiteIcon } from "./svg/arrowDownWhite.svg";
 import { ReactComponent as arrowLightBlueIcon } from "./svg/arrowLightBlue.svg";
 
 export const iconMap = {
@@ -67,5 +68,6 @@ export const iconMap = {
   cross: crossIcon,
   viewImg: viewImgIcon,
   arrowDownBlack: arrowDownBlackIcon,
+  arrowDownWhite: arrowDownWhiteIcon,
   arrowLightBlue: arrowLightBlueIcon,
 };

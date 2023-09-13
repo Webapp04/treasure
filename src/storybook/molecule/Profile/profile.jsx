@@ -1,24 +1,23 @@
 import React, { useState } from "react";
-import classNames from "classnames";
 import avatarPlaceholder from "../../atom/Icon/svg/avatar.jpg";
 import "./style.scss";
 import AccountCard from "../AccountCard/accountCard";
 
 const Profile = ({
   user,
-  isDark = true,
-  balanceAvax = 1.969,
-  isAccountOpen = true,
-  setIsAccountOpen = () => {},
+  isDark,
+  balanceAvax,
+  isAccountOpen,
+  setIsAccountOpen,
   openConnectWalletModal,
-  titleWalletAddress = "0x8905849EAe2FE48A199009CBc8D26018e5D36627",
+  titleWalletAddress,
   navigateToAccount,
-  avaxBalance = 0,
-  balanceSmrtr = 0,
-  balanceTresr = 0,
-  veClaimedTresr = 0,
-  balanceLpSMRTRAVAX = 0,
-  balanceLpTRESRAVAX = 0,
+  avaxBalance,
+  balanceSmrtr,
+  balanceTresr,
+  veClaimedTresr,
+  balanceLpSMRTRAVAX,
+  balanceLpTRESRAVAX,
   onDisconnect,
 }) => {
   const onShowAccount = () => {

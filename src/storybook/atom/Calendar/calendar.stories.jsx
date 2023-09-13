@@ -4,7 +4,11 @@ import { default as CalendarStory } from "./calendar";
 export default {
   title: "Atom/Calendar",
   component: CalendarStory,
-  argTypes: {},
+  argTypes: {
+    isOpen: {
+      control: { type: "boolean" },
+    },
+  },
 };
 
 const Template = (args) => <CalendarStory {...args} />;

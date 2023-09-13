@@ -14,13 +14,7 @@ export const LabelSizes = {
   extraLarge: "extraLarge",
 };
 
-const Label = ({
-  className = "",
-  variant = "primary",
-  size,
-  label,
-  ...props
-}) => {
+const Label = ({ className, variant, size, label, ...props }) => {
   return (
     <p
       className={classNames("label", {

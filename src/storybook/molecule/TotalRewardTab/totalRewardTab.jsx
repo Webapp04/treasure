@@ -5,10 +5,10 @@ import Tooltip from "storybook/atom/Tooltip/tooltip";
 import Label from "storybook/atom/Label/label";
 
 const TotalRewardTab = ({
-  totalTRESRBalance = 0,
+  totalTRESRBalance,
   loaderComponentActive,
-  tooltipTitle = "",
-  tooltipPosition = "bottom",
+  tooltipTitle,
+  tooltipPosition,
 }) => {
   return (
     <Tooltip title={tooltipTitle} position={tooltipPosition}>

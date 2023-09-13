@@ -5,14 +5,14 @@ import { formatterUS } from "utils";
 import Loader from "storybook/atom/Loader/loader";
 
 const VotingEsCrow = ({
-  flag = true,
-  isDark = true,
-  onClickStake = () => {},
-  onClickUnStake = () => {},
-  stakedAll = 0,
-  tresrBalance = 0,
-  tresrStakedAllBalance = 0,
-  balanceEstDailyVeTRESR = 0,
+  flag,
+  isDark,
+  onClickStake,
+  onClickUnStake,
+  stakedAll,
+  tresrBalance,
+  tresrStakedAllBalance,
+  balanceEstDailyVeTRESR,
 }) => {
   return (
     <div className="votingEscrow__wrapper">

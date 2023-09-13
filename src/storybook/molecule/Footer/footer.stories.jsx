@@ -5,7 +5,14 @@ import { NAV_LINKS_FOOTER } from "constant/singleNFTPage";
 export default {
   title: "Molecules/Footer",
   component: FooterStory,
-  argTypes: {},
+  argTypes: {
+    isDarkTheme: {
+      control: { type: "boolean" },
+    },
+    isMobile: {
+      control: { type: "boolean" },
+    },
+  },
 };
 
 const Template = (args) => <FooterStory {...args} />;

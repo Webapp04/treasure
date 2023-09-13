@@ -11,4 +11,6 @@ const Template = (args) => <TreasureTireStory {...args} />;
 
 export const TreasureTire = Template.bind({});
 
-TreasureTire.args = {};
+TreasureTire.args = {
+  progressWidth: 50,
+};

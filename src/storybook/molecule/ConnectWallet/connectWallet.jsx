@@ -5,7 +5,7 @@ const ConnectWallet = ({
   isLoading,
   isMobile,
   isNotConnected,
-  openConnectWalletModal = () => {},
+  openConnectWalletModal,
 }) => {
   return (
     <div className="homePage__info">

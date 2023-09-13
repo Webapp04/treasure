@@ -10,7 +10,7 @@ import TimedMarketplaceButton from "../TimedMarketplaceButton/timedMarketplaceBu
 
 const RewardBox = ({
   nftSelected,
-  dashboardMintContent = () => {},
+  dashboardMintContent,
   isAnimated,
   isActive,
   isMobile,

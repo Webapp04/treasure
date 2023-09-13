@@ -11,4 +11,21 @@ const Template = (args) => <RewardBoxStory {...args} />;
 
 export const RewardBox = Template.bind({});
 
-RewardBox.args = {};
+RewardBox.args = {
+  dashboardMintContent: () => {},
+  nftSelected: {},
+  isAnimated: false,
+  isActive: false,
+  isMobile: false,
+  onClose: () => {},
+  handleTransactionLoadingModal: () => {},
+  handleNFT: () => {},
+  handleUpgradeModal: () => {},
+  handleTreasureWarningModal: () => {},
+  isInsufficientBalance: false,
+  onOpenActivateKeyModal: () => {},
+  onView: () => {},
+  onViewTokenPage: () => {},
+  isTimeToUpgrade: false,
+  isUpgrade: false,
+};

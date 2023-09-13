@@ -6,16 +6,16 @@ import Button from "storybook/atom/Button/button";
 import Label from "storybook/atom/Label/label";
 
 const KeyRewardCard = ({
-  isMobile = false,
+  isMobile,
   nftSelected,
   tokenID,
   loaderComponentActive,
-  totalMonthlyBaseReward = 0,
-  claimedBonusTotalReward = 0,
-  onClickClaimAllBaseRewards = () => {},
-  balanceMonthlyTresr = 0,
-  balanceTresrRewards = 0,
-  onClickClaimBaseRewards = () => {},
+  totalMonthlyBaseReward,
+  claimedBonusTotalReward,
+  onClickClaimAllBaseRewards,
+  balanceMonthlyTresr,
+  balanceTresrRewards,
+  onClickClaimBaseRewards,
 }) => {
   return (
     <>

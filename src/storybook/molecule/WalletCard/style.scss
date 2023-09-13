@@ -22,18 +22,22 @@
   display: flex;
   align-items: center;
   color: #bbc5ff;
+  height: 38px;
 }
 .wallet_tab--icon {
   padding: 0 0.75rem;
   border-left: 1px solid #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .wallet_tab--copytext {
   padding: 0 0.75rem;
 }
-.wallet_walletIcon {
-  position: relative;
-  top: 3px;
-}
+// .wallet_walletIcon {
+//   position: relative;
+//   top: 3px;
+// }
 .copied {
 }
 

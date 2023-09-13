@@ -4,7 +4,7 @@ import Tooltip from "storybook/atom/Tooltip/tooltip";
 import { MAX_CHEST_TIER } from "constant/blockchain";
 import { position } from "tailwindcss-classnames";
 
-const TreasureTier = ({ progressWidth = 50, nftSelected }) => {
+const TreasureTier = ({ progressWidth, nftSelected }) => {
   return (
     <Tooltip
       title={"Increase by Opening to Treasure Increase Base Rewards"}

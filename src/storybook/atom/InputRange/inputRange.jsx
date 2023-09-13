@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-const InputRange = ({ scaleValue, inputBgSize, handleChange = () => {} }) => {
+const InputRange = ({ scaleValue, inputBgSize, handleChange }) => {
   return (
     <div className="inputRange">
       <input

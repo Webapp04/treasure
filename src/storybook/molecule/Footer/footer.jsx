@@ -1,10 +1,8 @@
 import React from "react";
-import classNames from "classnames";
 import "./style.scss";
 import WalletCard from "../WalletCard/walletCard";
 import logoLightIcon from "../../atom/Icon/svg/logo-dark.svg";
 import logoDarkIcon from "../../atom/Icon/svg/logo-dark.svg";
-import { NAV_LINKS_FOOTER } from "constant/singleNFTPage";
 import { NavLink } from "react-router-dom";
 import Icon from "storybook/atom/Icon/icon";
 
@@ -15,12 +13,7 @@ export const SOCIALS_FOOTER = [
   { image: "facebookImgLight" },
 ];
 
-const Footer = ({
-  isMobile = false,
-  isDarkTheme = false,
-  socials = SOCIALS_FOOTER,
-  filterNavigationList = NAV_LINKS_FOOTER,
-}) => {
+const Footer = ({ isMobile, isDarkTheme, socials, filterNavigationList }) => {
   return (
     <div className={"singleNFTFooter"}>
       <div className={"singleNFTFooter__container"}>

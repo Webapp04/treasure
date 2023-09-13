@@ -8,14 +8,14 @@ import { formatterUS } from "utils";
 import Loader from "storybook/atom/Loader/loader";
 
 const PoolReward = ({
-  flag = true,
-  isDark = true,
-  onclaimVeTresr = () => {},
-  veTresrBalance = 0,
-  veClaimedTresr = 0,
-  balanceVeTresrPerHour = 0,
-  balanceMaxAvailable = 0,
-  balanceEstDaysToMax = 0,
+  flag,
+  isDark,
+  onclaimVeTresr,
+  veTresrBalance,
+  veClaimedTresr,
+  balanceVeTresrPerHour,
+  balanceMaxAvailable,
+  balanceEstDaysToMax,
 }) => {
   return (
     <div className="votingEscrow__wrapper">

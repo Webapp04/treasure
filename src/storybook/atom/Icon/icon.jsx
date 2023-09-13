@@ -35,6 +35,7 @@ export const IconsNames = {
   cross: "cross",
   viewImg: "viewImg",
   arrowDownBlack: "arrowDownBlack",
+  arrowDownWhite: "arrowDownWhite",
   arrowLightBlue: "arrowLightBlue",
 };
 

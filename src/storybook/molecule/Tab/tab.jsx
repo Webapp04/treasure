@@ -8,7 +8,7 @@ export const TabType = {
   secondary: "secondary",
 };
 
-const Tab = ({ tabList = [], active, onClick, variant = "primary" }) => {
+const Tab = ({ tabList = [], active, onClick, variant }) => {
   const windowParams = useWindowDimensions();
   const isMobile = windowParams?.width <= 450;
   const [activeTab, setActiveTab] = useState();

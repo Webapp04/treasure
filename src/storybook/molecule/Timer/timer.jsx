@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-const Timer = ({ hours = 0, minutes = 0, seconds = 0, days = 0 }) => {
+const Timer = ({ hours, minutes, seconds, days }) => {
   return (
     <div className="timer">
       <div className="timer__element">

@@ -5,15 +5,15 @@ import Tooltip from "storybook/atom/Tooltip/tooltip";
 import Button from "storybook/atom/Button/button";
 
 const TimedMarketplaceButton = ({
-  isInsufficientBalance = true,
-  onClick = () => {},
-  disabled = false,
+  isInsufficientBalance,
+  onClick,
+  disabled,
   currentLevel,
-  hours = 0,
-  minutes = 0,
-  seconds = 0,
-  isTimeToUpgrade = false,
-  isUpgrade = false,
+  hours,
+  minutes,
+  seconds,
+  isTimeToUpgrade,
+  isUpgrade,
 }) => {
   return (
     <>

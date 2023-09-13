@@ -4,20 +4,20 @@ import VotingEsCrow from "../VotingESCrow/votinEsCrow";
 import PoolReward from "../PoolReward/poolReward";
 
 const VotingCard = ({
-  flag = true,
-  isDark = true,
-  onClickStake = () => {},
-  onClickUnStake = () => {},
-  stakedAll = 0,
-  tresrBalance = 0,
-  tresrStakedAllBalance = 0,
-  balanceEstDailyVeTRESR = 0,
-  onclaimVeTresr = () => {},
-  veTresrBalance = 0,
-  veClaimedTresr = 0,
-  balanceVeTresrPerHour = 0,
-  balanceMaxAvailable = 0,
-  balanceEstDaysToMax = 0,
+  flag,
+  isDark,
+  onClickStake,
+  onClickUnStake,
+  stakedAll,
+  tresrBalance,
+  tresrStakedAllBalance,
+  balanceEstDailyVeTRESR,
+  onclaimVeTresr,
+  veTresrBalance,
+  veClaimedTresr,
+  balanceVeTresrPerHour,
+  balanceMaxAvailable,
+  balanceEstDaysToMax,
 }) => {
   return (
     <div className="votingEscrow">

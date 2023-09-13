@@ -4,7 +4,14 @@ import { default as ProfileStory } from "./profile";
 export default {
   title: "Molecules/Profile",
   component: ProfileStory,
-  argTypes: {},
+  argTypes: {
+    isDark: {
+      control: { type: "boolean" },
+    },
+    isAccountOpen: {
+      control: { type: "boolean" },
+    },
+  },
 };
 
 const Template = (args) => <ProfileStory {...args} />;
@@ -14,9 +21,8 @@ export const Profile = Template.bind({});
 Profile.args = {
   user: null,
   isDark: true,
+  isAccountOpen: false,
   balanceAvax: 1.969,
-  onShowAccount: () => {},
-  onHideAccount: () => {},
   openConnectWalletModal: () => {},
   titleWalletAddress: "0x8905849EAe2FE48A199009CBc8D26018e5D36627",
   navigateToAccount: () => {},
@@ -27,4 +33,5 @@ Profile.args = {
   balanceLpSMRTRAVAX: 0,
   balanceLpTRESRAVAX: 0,
   onDisconnect: () => {},
+  setIsAccountOpen: () => {},
 };

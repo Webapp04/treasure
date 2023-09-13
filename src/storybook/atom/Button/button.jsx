@@ -17,13 +17,13 @@ export const ButtonSizes = {
 };
 
 const Button = ({
-  className = "",
-  variant = "primary",
-  size = "medium",
+  className,
+  variant,
+  size,
   label,
   iconPosition,
-  disabled = false,
-  iconName = IconsNames.circleplus,
+  disabled,
+  iconName,
   onClick,
   ...props
 }) => {

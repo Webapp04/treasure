@@ -1,0 +1,90 @@
+.listingTab__startDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &--input {
+    width: 60%;
+    position: relative;
+
+    input {
+      caret-color: transparent;
+    }
+
+    img {
+      position: absolute;
+      top: 19px;
+      right: 17px;
+      cursor: pointer;
+    }
+  }
+
+  &--time {
+    width: 40%;
+    position: relative;
+  }
+
+  &--timeOfDay {
+    margin: 0;
+    position: absolute;
+    right: 65px;
+    top: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--landingTitle);
+
+    @media (max-width: 750px) {
+      right: 15px;
+    }
+
+    &__createPage {
+      color: var(--marketplaceTitle) !important;
+    }
+  }
+
+  &--arrow {
+    transition: all 0.3s ease;
+  }
+
+  &--open {
+    transition: all 0.3s ease;
+    transform: rotate(180deg);
+  }
+}
+
+.modal__input {
+  border: 1px solid #bbc5ff;
+  border-radius: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ecf1f9;
+  padding: 8px 16px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+
+  &--createPage {
+    color: rgba(255, 255, 255, 0.85);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.85) !important;
+    }
+  }
+}
+
+.modal__input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}

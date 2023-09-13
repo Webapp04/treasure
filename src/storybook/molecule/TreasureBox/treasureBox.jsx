@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.scss";
-import { MAX_CHEST_TIER } from "constant/blockchain";
 import Tooltip from "storybook/atom/Tooltip/tooltip";
 import treasureImg from "../../atom/Icon/svg/treasure.png";
 import { TreasureTire } from "../TreasureTier/treasureTier.stories";
@@ -9,8 +8,8 @@ import Timer from "../Timer/timer";
 const TreasureBox = ({
   isAnimated,
   nftSelected,
-  openAttemptTitle = "0 TRESER",
-  nextTierEstTitle = "0 TRESER",
+  openAttemptTitle,
+  nextTierEstTitle,
   progressWidth,
   onAction,
   hours,

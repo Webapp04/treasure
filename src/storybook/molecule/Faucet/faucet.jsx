@@ -4,11 +4,11 @@ import "./style.scss";
 const Faucet = ({
   user,
   showFaucet,
-  handleToggleFaucet = () => {},
-  onGetTresr = () => {},
-  onGetSmrtr = () => {},
-  onGetTresrLP = () => {},
-  onGetSmrtrLP = () => {},
+  handleToggleFaucet,
+  onGetTresr,
+  onGetSmrtr,
+  onGetTresrLP,
+  onGetSmrtrLP,
 }) => {
   return (
     <div>

@@ -11,50 +11,13 @@ import { ViewportList } from "react-viewport-list";
 import refreshIcon from "../../atom/Icon/svg/refresh.svg";
 import FounderKeyTab from "../FounderKeyTab/founderKeyTab";
 
-const tokenList = [
-  {
-    isActive: true,
-    tokenId: 0,
-    tier: 0,
-    chestProgressLineWidth: 50,
-    tierTresr: 0,
-    staked: true,
-    isAnimated: true,
-    percentToUpgrade: 100,
-    onNFKey: () => {},
-    spaceThumbnailSmall:
-      "https://artifactory-nfkey.nyc3.digitaloceanspaces.com/keys-space/1/100x100.jpg",
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  },
-  {
-    isActive: false,
-    tokenId: 0,
-    tier: 0,
-    chestProgressLineWidth: 50,
-    tierTresr: 0,
-    staked: true,
-    isAnimated: true,
-    percentToUpgrade: 100,
-    onNFKey: () => {},
-    spaceThumbnailSmall:
-      "https://artifactory-nfkey.nyc3.digitaloceanspaces.com/keys-space/1/100x100.jpg",
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  },
-];
-
 const FounderKeyCard = ({
   activeDropdownItem,
-  setActiveDropdownItem = () => {},
+  setActiveDropdownItem,
   handleTransactionLoadingModal,
   activeFilter,
-  setActiveFilter = () => {},
-  filterTokenList = [...tokenList],
+  setActiveFilter,
+  filterTokenList,
   isAnimated,
   onOpenModal,
   nftSelected,

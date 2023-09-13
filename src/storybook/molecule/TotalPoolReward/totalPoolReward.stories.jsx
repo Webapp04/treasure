@@ -8,6 +8,12 @@ export default {
     isOpen: {
       control: { type: "boolean" },
     },
+    isDark: {
+      control: { type: "boolean" },
+    },
+    flag: {
+      control: { type: "boolean" },
+    },
   },
 };
 
@@ -15,4 +21,13 @@ const Template = (args) => <TotalPoolRewardStory {...args} />;
 
 export const TotalPoolReward = Template.bind({});
 
-TotalPoolReward.args = {};
+TotalPoolReward.args = {
+  isOpen: true,
+  isDark: true,
+  flag: true,
+  onToggleDetails: () => {},
+  balanceAll: 0,
+  ownTokenRewardList: [],
+  balanceBonusAll: 0,
+  onClickClaimAllRewards: () => {},
+};

@@ -4,11 +4,29 @@ import { default as ModalStory } from "./modal";
 export default {
   title: "Atom/Modal",
   component: ModalStory,
-  argTypes: {},
+  argTypes: {
+    withCrossIcon: {
+      control: { type: "boolean" },
+    },
+    isDark: {
+      control: { type: "boolean" },
+    },
+    isFullModalBg: {
+      control: { type: "boolean" },
+    },
+    withoutBlur: {
+      control: { type: "boolean" },
+    },
+  },
 };
 
 const Template = (args) => <ModalStory {...args} />;
 
 export const Modal = Template.bind({});
 
-Modal.args = {};
+Modal.args = {
+  handleClose: () => {},
+  withCrossIcon: false,
+  isDark: true,
+  isFullModalBg: false,
+};

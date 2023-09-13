@@ -11,14 +11,14 @@ import Button from "storybook/atom/Button/button";
 import KeyRewards from "../KeyReward/keyReward";
 
 const TotalPoolReward = ({
-  isOpen = true,
-  isDark = true,
-  flag = true,
-  onToggleDetails = () => {},
-  balanceAll = 0,
+  isOpen,
+  isDark,
+  flag,
+  onToggleDetails,
+  balanceAll,
   ownTokenRewardList = [],
-  balanceBonusAll = 0,
-  onClickClaimAllRewards = () => {},
+  balanceBonusAll,
+  onClickClaimAllRewards,
 }) => {
   const navigate = useNavigate();
 

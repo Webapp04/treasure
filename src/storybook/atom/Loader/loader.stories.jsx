@@ -33,4 +33,7 @@ Loader.args = {
   variant: LoaderTypes.secondary,
   size: LoaderSizes.small,
   speed: LoaderSpeeds.normal,
+  isLoaderActive: true,
+  opacityLevel: 3,
+  customClass: "",
 };

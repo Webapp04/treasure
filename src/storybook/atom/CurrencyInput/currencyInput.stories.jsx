@@ -4,7 +4,17 @@ import { default as CurrencyInputStory } from "./currencyInput";
 export default {
   title: "Atom/CurrencyInput",
   component: CurrencyInputStory,
-  argTypes: {},
+  argTypes: {
+    isDark: {
+      control: { type: "boolean" },
+    },
+    isOpenCurrencyList: {
+      control: { type: "boolean" },
+    },
+    hideCurrencyList: {
+      control: { type: "boolean" },
+    },
+  },
 };
 
 const Template = (args) => <CurrencyInputStory {...args} />;

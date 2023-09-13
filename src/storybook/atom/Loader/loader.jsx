@@ -23,12 +23,12 @@ export const LoaderSpeeds = {
 };
 
 const Loader = ({
-  variant = "secondary",
-  size = "small",
-  speed = "normal",
-  isLoaderActive = true,
-  opacityLevel = 3,
-  customClass = "",
+  variant,
+  size,
+  speed,
+  isLoaderActive,
+  opacityLevel,
+  customClass,
 }) => {
   if (
     (variant === LoaderTypes.pageLoader ||
@@ -39,22 +39,22 @@ const Loader = ({
   }
   return (
     <>
-      {variant === LoaderTypes.primary ||
-        (variant === LoaderTypes.secondary && (
-          <div
-            className={classNames("custom-loader", {
-              loaderPrimary: variant === LoaderTypes.primary,
-              loaderSecondary: variant === LoaderTypes.secondary,
-              loaderExtraSmall: size === LoaderSizes.extraSmall,
-              loaderSmall: size === LoaderSizes.small,
-              loaderMedium: size === LoaderSizes.medium,
-              loaderLarge: size === LoaderSizes.large,
-              loaderSlow: speed === LoaderSpeeds.slow,
-              loaderNormal: speed === LoaderSpeeds.normal,
-              loaderFast: speed === LoaderSpeeds.fast,
-            })}
-          ></div>
-        ))}
+      {(variant === LoaderTypes.primary ||
+        variant === LoaderTypes.secondary) && (
+        <div
+          className={classNames("custom-loader", {
+            loaderPrimary: variant === LoaderTypes.primary,
+            loaderSecondary: variant === LoaderTypes.secondary,
+            loaderExtraSmall: size === LoaderSizes.extraSmall,
+            loaderSmall: size === LoaderSizes.small,
+            loaderMedium: size === LoaderSizes.medium,
+            loaderLarge: size === LoaderSizes.large,
+            loaderSlow: speed === LoaderSpeeds.slow,
+            loaderNormal: speed === LoaderSpeeds.normal,
+            loaderFast: speed === LoaderSpeeds.fast,
+          })}
+        ></div>
+      )}
       {variant === LoaderTypes.pageLoader && (
         <div>
           <div
