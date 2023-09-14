@@ -23,7 +23,6 @@ const WalletCard = ({ isMobile }) => {
     });
   };
 
-  console.log(FOOTER_WALLET_ADDRESS, "kkk");
   return (
     <div className="wallet__card--wrapper">
       {FOOTER_WALLET_ADDRESS?.map((item, key) => (
