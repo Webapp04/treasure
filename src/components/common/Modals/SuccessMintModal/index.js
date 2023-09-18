@@ -158,7 +158,7 @@ const SuccessMintModal = ({
         handleClose={handleCloseModal}
         withCrossIcon
         isFullModalBg
-        className="max-h-[257px] max-w-[458px]"
+        className="max-w-[458px]"
       >
         <div className="p-[32px] text-white">
           <div className="text-[#F44550] text-[16px] text-center">

@@ -48,7 +48,7 @@ export default function useHandleAuth() {
     const loginData = await fetchLoginMetamask(address, signature);
     if (!loginData?.token || !loginData?.user)
       return ACTIONS.SET_PENDING_LOADER(dispatch, false);
-    ACTIONS.SET_USER(dispatch, loginData?.use);
+    ACTIONS.SET_USER(dispatch, loginData?.user);
     localStorageSet("token", loginData?.token);
     ACTIONS.SET_PENDING_LOADER(dispatch, false);
   };
