@@ -30,7 +30,6 @@ const TimedMarketplaceButton = ({
         <div className="timed__marketplace__upgradeButton">
           <Tooltip title={"Upgrade Key Level by Burning $SMRTR"}>
             <Button
-              size="medium"
               label={currentLevel >= 150 ? "Max level" : "Upgrade"}
               onClick={onClick}
               disabled={disabled}
