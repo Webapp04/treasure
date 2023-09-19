@@ -18,7 +18,7 @@ export const ButtonSizes = {
 
 const Button = ({
   className,
-  variant,
+  variant = ButtonCategoryTypes.primary,
   size,
   label,
   iconPosition,

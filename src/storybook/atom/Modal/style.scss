@@ -16,13 +16,14 @@
       height: auto;
       overflow: hidden;
       border: 1px solid rgb(147, 163, 248);
-      background: linear-gradient(
-        #06103380 0%,
-        #0a1d6080 16.2%,
-        #07174f80 40.23%,
-        #08144380 68.13%,
-        #040b2680 100%
-      );
+      background: #030d3399;
+      // background: linear-gradient(
+      //   rgba(6, 16, 51, 0.5) 0%,
+      //   rgba(10, 29, 96, 0.5) 16.2%,
+      //   rgba(7, 23, 79, 0.5) 40.23%,
+      //   rgba(8, 20, 67, 0.5) 68.13%,
+      //   rgba(4, 11, 38, 0.5) 100%
+      // );
       overflow: hidden;
       border-radius: 8px;
       outline: none;

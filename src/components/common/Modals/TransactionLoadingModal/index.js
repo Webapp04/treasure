@@ -48,8 +48,8 @@ const TransactionLoadingModal = ({ isOpen }) => {
   return (
     <Modal
       isModalOpen={isOpen}
-      className={`px-[20px] py-[32px] max-w-[458px] max-h-[424px] rounded-tr-[50px] rounded-tl-[50px] ${
-        isMobile ? "h-[400px]" : "h-[586px]"
+      className={`px-[20px] py-[32px] max-w-[458px] max-h-[424px]  ${
+        isMobile ? "h-[400px] rounded-tr-[50px] rounded-tl-[50px]" : "h-[586px]"
       }`}
     >
       <p className="modal__title transactionLoadingModal__title">
